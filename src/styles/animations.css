@@ -1,0 +1,50 @@
+@keyframes shake {
+    0% {
+      transform: translateX(0);
+    }
+    25% {
+      transform: translateX(10px);
+    }
+    50% {
+      transform: translateX(0);
+    }
+    75% {
+      transform: translateX(10px);
+    }
+    100% {
+      transform: translateX(0);
+    }
+  }
+  
+  @keyframes balloons-left {
+    0%,
+    100% {
+      transform: translateY(0) rotate(-4deg);
+    }
+    50% {
+      transform: translateY(-25px) rotate(4deg);
+    }
+  }
+  
+  @keyframes balloons-right {
+      0%,
+      100% {
+        transform: translateY(0) rotate(356deg);
+      }
+      50% {
+        transform: translateY(25px) rotate(364deg);
+      }
+    }
+
+.yellow-b:last-of-type{
+    position: absolute;
+    right: 0;
+    animation: balloons-right 6s ease-in-out infinite;
+}
+
+.blue-b:first-of-type{
+    position: absolute;
+    left: 0;
+    top: 0;
+    animation: balloons-left 4s ease-in-out infinite;
+}

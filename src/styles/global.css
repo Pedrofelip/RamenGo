@@ -1,0 +1,290 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "M PLUS Rounded 1c", sans-serif;
+    color:white;
+    font-weight: 400;
+}
+
+/* */
+
+.overflow-y-auto{
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+.bold{
+    font-weight: 900;
+}
+
+.mt-24{
+    margin-top: 24px;
+}
+.mt-32{
+    margin-top: 32px;
+}
+.mt-48{
+    margin-top: 48px;
+}
+.mt-80{
+    margin-top: 80px;
+}
+.mt-96{
+    margin-top: 96px;
+}
+.mt-115{
+    margin-top: 115px;
+}
+
+.pb-126{
+    padding-bottom: 126px;
+}
+
+
+.background{
+    background-size: contain;
+    position: relative;
+    padding: 40px;
+}
+
+.screen-size{
+    width: 100vw;
+    height: 100vh;
+    background-color: #FAFAED;
+}
+
+.w-full{
+    width: 100%;
+}
+.w-45{
+    width: 45%;
+}
+.w-55{
+    width: 55%;
+}
+
+.h-full{
+    height: 100%;
+}
+
+.p-40{
+    padding: 40px;
+}
+.p-8{
+    padding: 8px;
+}
+
+.bold{
+    font-weight: 900;
+}
+
+.line{
+    display: flex;
+}
+
+.column{
+    display: flex;
+    flex-direction: column;
+}
+
+.wrap{
+    flex-wrap: wrap;
+}
+
+
+.gap-8{
+    gap: 8px;
+}
+.gap-16{
+    gap: 16px;
+}
+.gap-14{
+    gap: 14px;
+}
+.gap-64{
+    gap: 64px;
+}
+
+.center{
+    align-items: center;
+    justify-content: center;
+}
+
+.between{
+    align-items: center;
+    justify-content: space-between;
+}
+
+.items-end{
+    align-items: end;
+}
+
+.end{
+    justify-content: end;
+}
+
+.absolute{
+    position: absolute;
+}
+
+
+.text-32{
+    font-size: 32px;
+}
+.text-20{
+    font-size: 20px;
+}
+.text-27{
+    font-size: 27px;
+}
+.text-yellow{
+    color: #FFC024;
+}
+.text-blue{
+    color: #1820EF;
+}
+.text-red{
+    color: #FF4E42;
+}
+.text-black{
+    color: black;
+}
+.text-center{
+    text-align: center;
+}
+
+.debug{
+    border: 1px solid green;
+    background-color: red;
+}
+
+
+
+.active-button{
+    font-weight: 800;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 16px;
+    padding-right: 16px;
+    width: 200px;
+    height: 60px;
+    background-color: #1820EF;
+    border-radius: 50px;
+    align-items: center;
+    cursor: pointer;
+    transition: all;
+    transition-duration: 0.5s;
+    text-decoration: none;
+}
+
+
+
+.active-button-230{
+    font-weight: 800;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 16px;
+    padding-right: 16px;
+    width: 230px;
+    height: 60px;
+    background-color: #1820EF;
+    border-radius: 50px;
+    align-items: center;
+    cursor: pointer;
+    transition: all;
+    transition-duration: 0.5s;
+}
+
+.active-button:hover{
+    background-color: #C5C5C5;
+    scale: 1.1;
+    transition: 0.3s;
+}
+
+/* HTML: <div class="loader"></div> */
+.loader {
+  width: 104px;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  border: 8px solid #1820EF;
+  animation:
+    l20-1 0.8s infinite linear alternate,
+    l20-2 1.6s infinite linear;
+}
+@keyframes l20-1{
+   0%    {clip-path: polygon(50% 50%,0       0,  50%   0%,  50%    0%, 50%    0%, 50%    0%, 50%    0% )}
+   12.5% {clip-path: polygon(50% 50%,0       0,  50%   0%,  100%   0%, 100%   0%, 100%   0%, 100%   0% )}
+   25%   {clip-path: polygon(50% 50%,0       0,  50%   0%,  100%   0%, 100% 100%, 100% 100%, 100% 100% )}
+   50%   {clip-path: polygon(50% 50%,0       0,  50%   0%,  100%   0%, 100% 100%, 50%  100%, 0%   100% )}
+   62.5% {clip-path: polygon(50% 50%,100%    0, 100%   0%,  100%   0%, 100% 100%, 50%  100%, 0%   100% )}
+   75%   {clip-path: polygon(50% 50%,100% 100%, 100% 100%,  100% 100%, 100% 100%, 50%  100%, 0%   100% )}
+   100%  {clip-path: polygon(50% 50%,50%  100%,  50% 100%,   50% 100%,  50% 100%, 50%  100%, 0%   100% )}
+}
+@keyframes l20-2{ 
+  0%    {transform:scaleY(1)  rotate(0deg)}
+  49.99%{transform:scaleY(1)  rotate(135deg)}
+  50%   {transform:scaleY(-1) rotate(0deg)}
+  100%  {transform:scaleY(-1) rotate(-135deg)}
+}
+
+.inactive-button{
+    font-weight: 800;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 16px;
+    padding-right: 16px;
+    width: 200px;
+    height: 60px;
+    background-color: #C5C5C5;
+    border-radius: 50px;
+    align-items: center;
+    cursor: not-allowed;
+    transition: all;
+    transition-duration: 0.5s;
+}
+
+.header{
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    z-index: 500;
+}
+
+.only-mobile{
+    display: none;
+}
+
+@media (max-width: 995px) {
+    
+}
+
+
+@media (max-width: 820px) {
+    .background{
+        padding: 20px;
+        text-align: center;
+    }
+    
+    .only-mobile{
+        display:flex
+    }
+
+    .header{
+        position: inherit;
+        justify-content: center;
+    }
+
+    .mobile-wrap{
+        flex-wrap: wrap;
+    }
+
+    
+    .mobile-hidden{
+        display: none;
+    }
+    .mobile-center{
+        display: flex;
+        justify-content: center;
+    }
+}

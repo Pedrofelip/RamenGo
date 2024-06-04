@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>RamenGo</title>
+        <link rel="shortcut icon" href="./src/imgs/garoto.svg" type="image/x-icon">
+        <link rel="stylesheet" type="text/css" href="./src/styles/global.css" />
+        <link rel="stylesheet" type="text/css" href="./src/styles/cover.css" />
+        <link rel="stylesheet" type="text/css" href="./src/styles/ticket.css" />
+        <link rel="stylesheet" type="text/css" href="./src/styles/carousel.css"/>
+        <link rel="stylesheet" type="text/css" href="./src/styles/options.css"/>
+        <link rel="stylesheet" type="text/css" href="./src/styles/animations.css">
+        <script type="module" src="./src/scripts/index.js" defer></script>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@100;300;400;500;700;800;900&display=swap" rel="stylesheet"/>
+    </head>
+    <body>
+        <main class="screen-size pb-126 overflow-y-auto">
+            <div id="orderTicket"></div>
+            <div
+                class="screen-size background"
+                style="
+                    background-image: url('./src/imgs/pattern-vermelha.png');
+                "
+            >
+                <div class="bold text-yellow">ramenGO!</div>
+                <div class="cover-content">
+                    <div class="main-cover">
+                        <div class="mobile-center">
+                            <div class="cover-img">
+                                <div class="line w-full h-full absolute">
+                                    <div class="blue-baloon">
+                                        <img
+                                            class="blue-b"
+                                            src="./src/imgs/balao-azul.png"
+                                        />
+                                    </div>
+                                </div>
+                                <img
+                                    class="h-full"
+                                    src="./src/imgs/entregadora.png"
+                                />
+                                <div class="line center absolute w-full h-full">
+                                    <div class="line w-full end yellow-baloon">
+                                        <img
+                                            class="yellow-b"
+                                            src="./src/imgs/balao-amarelo.png"
+                                        />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="cover-text">
+                            <div class="line items-end gap-8 mobile-wrap">
+                                <h3 class="text-yellow bold japanese-title-pc">
+                                    ラlメン
+                                </h3>
+                                <h3
+                                    class="text-yellow bold japanese-title-mobile"
+                                >
+                                    ラーメン
+                                </h3>
+                                <h1 class="title">GO!</h1>
+                            </div>
+                            <div class="mt-24 cover-description">
+                                Enjoy a good ramen in the comfort of your house.
+                                Create your own ramen and choose your favorite
+                                flavour combination!
+                            </div>
+                            <div class="mobile-hidden">
+                                <a id="start" class="active-button mt-24" href="#order-section">
+                                    ORDER NOW
+                                    <div>
+                                        <img
+                                            src="./src/imgs/icon/Btn/yellowArrow.svg"
+                                        />
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="mt-115" id="order-section">
+                <div id="startHere" class="line center text-center">
+                    <h3 class="bold text-32 text-black">
+                        First things first: select your favorite broth.
+                    </h3>
+                </div>
+                <div class="line center text-center">
+                    <p class="text-black">
+                        It will give the whole flavor on your ramen soup.
+                    </p>
+                </div>
+                <div id="brothsContainer" class="broths-container">
+                    <div class="loading-card">
+                        <div class="card-icon">
+                            <div class="loader"></div>
+                        </div>
+                        <h5 class="text-blue bold text-20">Loading</h5>
+                        <p class="text-black">-</p>
+                        <h6 class="text-red bold text-20">-</h6>
+                    </div>
+                </div>
+                <div id="mobileWrapper" class="mobile-wrapper">
+                    <div class="line center absolute h-full w-full">
+                        <div id="leftComandB" class="left-comand"></div>
+                        <div id="middleComandB" class="middle-comand"></div>
+                        <div id="rightComandB" class="right-comand"></div>
+                    </div>
+                    <div
+                        id="brothsMobileContainer"
+                        class="broths-container-mobile"
+                    >
+                        <div class="loading-card">
+                            <div class="card-icon">
+                                <div class="loader"></div>
+                            </div>
+                            <h5 class="text-blue bold text-20">Loading</h5>
+                            <p class="text-black">-</p>
+                            <h6 class="text-red bold text-20">-</h6>
+                        </div>
+                    </div>
+                </div>
+                <div
+                    id="brothsDots"
+                    class="line center gap-8 w-full mt-32 only-mobile"
+                ></div>
+            </div>
+            <div class="mt-96">
+                <div class="line center text-center">
+                    <h3 class="bold text-32 text-black">
+                        It’s time to choose (or not) your meat!
+                    </h3>
+                </div>
+                <div class="line center text-center">
+                    <p class="text-black">
+                        Some people love, some don’t. We have options for all
+                        tastes.
+                    </p>
+                </div>
+                <div id="proteinsContainer" class="protein-container">
+                    <div class="loading-card">
+                        <div class="card-icon">
+                            <div class="loader"></div>
+                        </div>
+                        <h5 class="text-blue bold text-20">Loading</h5>
+                        <p class="text-black">-</p>
+                        <h6 class="text-red bold text-20">-</h6>
+                    </div>
+                </div>
+                <div id="mobileWrapper" class="mobile-wrapper">
+                    <div class="line center absolute h-full w-full">
+                        <div id="leftComandP" class="left-comand"></div>
+                        <div id="middleComandP" class="middle-comand"></div>
+                        <div id="rightComandP" class="right-comand"></div>
+                    </div>
+                    <div
+                        id="proteinsMobileContainer"
+                        class="proteins-container-mobile"
+                    >
+                        <div class="loading-card">
+                            <div class="card-icon">
+                                <div class="loader"></div>
+                            </div>
+                            <h5 class="text-blue bold text-20">Loading</h5>
+                            <p class="text-black">-</p>
+                            <h6 class="text-red bold text-20">-</h6>
+                        </div>
+                    </div>
+                </div>
+                <div
+                    id="proteinsDots"
+                    class="line center gap-8 w-full mt-32 only-mobile"
+                ></div>
+                <div class="line center mt-80">
+                    <div
+                        id="orderButton"
+                        order
+                        class="inactive-button"
+                        data-active="./src/imgs/icon/Btn/yellowArrow.svg"
+                        data-inactive="./src/imgs/icon/Btn/arrow.svg"
+                    >
+                        PLACE MY ORDER
+                        <img src="./src/imgs/icon/Btn/arrow.svg" />
+                    </div>
+                </div>
+            </div>
+        </main>
+    </body>
+</html>

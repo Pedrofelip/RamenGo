@@ -24,7 +24,7 @@
 <li>Abra o arquivo index.html em seu navegador preferido.</li>
 <li>Explore as diferentes seções do site, como o menu, informações sobre o restaurante e a tela de resumo de pedido.</li>
 <li>Desfrute da experiência de explorar um restaurante de ramen autêntico!</li>
-<li><b>observação:</b> O carrosel no modo mobile não esta respondendo ao toque, porem o timer faz o papel para mostrar todas as opçoes do cardapio porém tem qu esperar ele passar pro lado sozinho </li>
+<li><b>observação:</b> O carrosel no modo mobile não esta respondendo ao toque, porém o timer faz o papel de mostrar todas as opçoes do cardapio mas tem que esperar ele passar pro lado sozinho </li>
 </ul>
 
 <h2>Autor:</h2>
